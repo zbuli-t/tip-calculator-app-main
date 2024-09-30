@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <meta lang="en">
+
+</head>
+<body>
+    <header>
+        <span>SPLI</span>
+        <span>TTER</span>
+    </header>
+    
+
+    <div class="big-container">
+        <div class="part1">
+            <span class="topic">Bill</span>
+            <div class="billbox">
+                <span>$</span>
+                <input id="bill" placeholder="0.00">
+            </div>
+        </div>
+
+        <div class="part2">
+            <span class="topic">Select Tip %</span>
+            <div class="tip-container">
+                <div class="tipbox tip5">5%</div>
+                <div class="tipbox tip10">10%</div>
+                <div class="tipbox tip15">15%</div>
+                <div class="tipbox tip25">25%</div>
+                <div class="tipbox tip50">50%</div>
+                <input id="custom" class="tipbox custom" placeholder="Custom">
+            </div>
+        </div>
+
+
+        <div class="part3">
+            <span class="topic">Number of People</span>
+            <div class="pplbox">
+                <img class="pplicon" src="images/icon-person.svg" alt="pplicon">
+                <input id="no-of-people" placeholder="0">
+            </div>
+        </div>
+
+
+        <div class="part4">
+            <div class="tip-amount-box">
+                <div class="tip-person">
+                    <span>Tip Amount</span>
+                    <span>/ person</span>
+                </div>
+                <div id="tip-perhead" class="total tip-perhead">
+                  $4.27
+                </div>
+            </div>
+
+            <div class="total-box">
+              <div class="total-person">
+                  <span>Total</span>
+                  <span>/ person</span>
+              </div>        
+              <div  id="total-perhead" class="total total-perhead">
+                $32.79
+              </div>
+          </div>
+
+          <button id="button">RESET</button>
+
+
+        </div>
+
+
+    </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">J.T.</a>.
+  </div>
+  <script src="splitter.js"></script>
+</body>
+</html>
